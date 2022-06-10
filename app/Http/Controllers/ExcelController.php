@@ -58,4 +58,11 @@ class ExcelController extends Controller
         return redirect('/')->with('success','Data imported successfully');
 
     }
+
+    //return the stored excel data
+    public function Apidata()
+    {
+        return ExcelData::all();
+    }
+
 }
